@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+p {
+   color: whitesmoke;
+}
+body {
+    background-color: #C05746;
+}
+
+a:link {
+    color: #6699CC;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #6699CC;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.book-title {
+    background-color: #503047;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .book-title:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .book-body {
+    padding: 0 18px;
+    background-color: #DBCDC6;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .book-body p {
+    color: teal;
+  }
+  .logo {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  width: 100%;
+  padding: auto 0;
+
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.projCont {
+  position: relative;
+  display: none;
+  background-color: #153243;
+}
+
+/* Expanding image text */
+/* #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+} */
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
